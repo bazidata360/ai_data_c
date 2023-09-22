@@ -105,9 +105,7 @@ with st.sidebar.expander("Cleaning", expanded=False):
     df = clean_df(df, cleaning)
     check_dataset_size(df, config)
 # for model
-with st.sidebar.expander(
-    "Modeling Options", expanded=False
-):
+with st.sidebar.expander("Modeling Options", expanded=False):
     st.write(readme["app"]["modell"])
     st.write("")
 st.write("")
