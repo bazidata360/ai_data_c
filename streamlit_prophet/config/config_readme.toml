@@ -1,4 +1,10 @@
 [app]
+
+dataset_intro = """Load a Sample Dataset:
+Want to Try Out a Sample Dataset?
+* Tick the box to load a sample dataset and discover the capabilities of this app. 
+* To use your own data, simply untick the box.
+"""
 app_intro = """
 Looking to make predictions based on historical data? Our Streamlit app streamlines the process for you! Dive into the world of time series forecasting effortlessly using the Prophet model.
 How Does It Work?
