@@ -6,6 +6,20 @@ Want to Try Out a Sample Dataset?
 * Tick the box to load a sample dataset and discover the capabilities of this app. 
 * To use your own data, simply untick the box.
 """
+
+
+columns = """
+Date Column:
+
+* Definition: The column recognised as a date.
+
+Target Column:
+
+* Definition: The quantity you wish to forecast.
+
+
+"""
+
 cast = """
 Make forecast in future days > Forecasting Future Days
 
