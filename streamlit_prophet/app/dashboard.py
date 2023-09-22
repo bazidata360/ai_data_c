@@ -93,12 +93,6 @@ with st.sidebar.expander("Columns", expanded=True):
     date_col, target_col = input_columns(config, readme, df, load_options)
     df = format_date_and_target(df, date_col, target_col, config, load_options)
 
-
-#add data ss into expander
-with st.sidebar.expander("Filtering Options", expanded=False
-):
-    st.write(readme["app"]["filter"])
-    st.write("")
 # Filtering
 with st.sidebar.expander("Filtering", expanded=False):
     dimensions = input_dimensions(df, readme, config)
