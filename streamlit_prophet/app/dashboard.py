@@ -104,12 +104,14 @@ with st.sidebar.expander("Cleaning", expanded=False):
     cleaning = input_cleaning(resampling, readme, config)
     df = clean_df(df, cleaning)
     check_dataset_size(df, config)
+
+st.sidebar.title("2. Modelling")
 # for model
-with st.sidebar.expander("Modeling Options", expanded=False):
+with st.sidebar.expander("Modeling Options", expanded=False
+):
     st.write(readme["app"]["modell"])
     st.write("")
 st.write("")
-st.sidebar.title("2. Modelling")
 
 # Prior scale
 with st.sidebar.expander("Prior scale", expanded=False):
