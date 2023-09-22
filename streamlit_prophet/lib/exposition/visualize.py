@@ -52,7 +52,7 @@ def plot_overview(
     report: List[Dict[str, Any]]
         List of all report components.
     """
-    display_expander(readme, "overview", "More info on this plot")
+    display_expander(readme, "overview", "Dive Deeper into This Plot")
     bool_param = False if cleaning["log_transform"] else True
     if make_future_forecast:
         model = models["future"]
@@ -120,7 +120,7 @@ def plot_performance(
     )
     st.write("## Performance metrics")
     display_expanders_performance(use_cv, dates, resampling, style, readme)
-    display_expander(readme, "helper_metrics", "How to evaluate my model?", True)
+    display_expander(readme, "helper_metrics", "Understanding Performance Metrics?", True)
     st.write("### Global performance")
     report = display_global_metrics(evaluation_df, eval, dates, resampling, use_cv, config, report)
     st.write("### Deep dive")
@@ -185,7 +185,7 @@ def plot_components(
     """
     style = config["style"]
     st.write("## Global impact")
-    display_expander(readme, "components", "More info on this plot")
+    display_expander(readme, "components", "Understanding the Overall Impact")
     if make_future_forecast:
         forecast_df = forecasts["future"].copy()
         model = models["future"]
@@ -202,7 +202,7 @@ def plot_components(
     st.plotly_chart(fig1)
 
     st.write("## Local impact")
-    display_expander(readme, "waterfall", "More info on this plot", True)
+    display_expander(readme, "waterfall", "Decoding the Plot's Intricacies", True)
     start_date, end_date = input_waterfall_dates(forecast_df, resampling)
     fig2 = make_waterfall_components_plot(
         model, forecast_df, start_date, end_date, target_col, cleaning, resampling, style, df
