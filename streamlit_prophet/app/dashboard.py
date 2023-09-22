@@ -174,6 +174,12 @@ else:
     use_cv = False
 
 st.sidebar.title("4. Forecast")
+#  forcast
+with st.sidebar.expander("Forecast Options", expanded=False
+):
+    st.write(readme["app"]["cast"])
+    st.write("")
+st.write("")
 
 # Choose whether or not to do future forecasts
 make_future_forecast = st.sidebar.checkbox(
