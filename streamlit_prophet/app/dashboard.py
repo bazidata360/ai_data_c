@@ -135,6 +135,12 @@ with st.sidebar.expander("Other parameters", expanded=False):
     df = add_cap_and_floor_cols(df, params)
 
 st.sidebar.title("3. Evaluation")
+#  eval
+with st.sidebar.expander("Evaluation Options", expanded=False
+):
+    st.write(readme["app"]["eva"])
+    st.write("")
+st.write("")
 
 # Choose whether or not to do evaluation
 evaluate = st.sidebar.checkbox(
