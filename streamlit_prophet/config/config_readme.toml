@@ -5,6 +5,36 @@ Want to Try Out a Sample Dataset?
 * Tick the box to load a sample dataset and discover the capabilities of this app. 
 * To use your own data, simply untick the box.
 """
+
+modell = """
+
+Change point prior scale
+
+* The model is adept at spotting 'changepoints' in the trend on its own. This particular setting fine-tunes the trend's adaptability by regulating the number of changepoints identified. By ramping up this value, you endow the trend with increased flexibility, leading to the recognition of more changepoints. However, tread cautiously. A hyper-flexible trend can lead to overfitting, inadvertently folding seasonal patterns into the trend – an outcome best avoided.
+
+  Seasonality prior scale
+
+* This setting governs the intensity of seasonal influences on your forecasts. If you notice that the seasonality seems excessively pronounced or distorted in the predictions, consider reducing this value for a more balanced outcome. 
+
+  Holidays prior scale
+
+* This setting controls the extent to which holidays impact your forecasts. Adjusting it allows you to fine-tune the prominence of holiday-related effects in your predictions.
+
+  Yearly seasonality
+
+* Decide if you'd like to factor in this particular seasonality when modelling. In the 'auto' setting, The model will only incorporate seasonality if there's sufficient historical data – that's at least two full cycles of the seasonality in question (for instance, two years of data for an annual seasonality).
+
+  Monthly seasonality
+
+* Decide if this seasonality should be integrated into your model. When set to 'auto', the model will automatically account for the seasonality if your dataset encompasses at least two complete periods of historical data. For instance, for yearly seasonality, you'd need a minimum of two years' worth of data.
+
+  Weekly seasonality
+
+* Select if you'd like to weave in this seasonality. When on 'auto' setting, Prophet will only integrate the seasonality if your dataset spans at least two complete cycles of historical data. For a yearly seasonality, for instance, you would require data from at least two full years.
+
+
+"""
+
 app_intro = """
 Looking to make predictions based on historical data? Our Streamlit app streamlines the process for you! Dive into the world of time series forecasting effortlessly using the Prophet model.
 How Does It Work?
