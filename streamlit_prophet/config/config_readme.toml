@@ -228,12 +228,12 @@ Be careful, this method can be misleading as under-prediction errors could be co
 [plots]
 overview = """
 This visualization displays several information:
-* The blue line shows the __predictions__ made by the model on both training and validation periods.
-* The blue shade around is a __80% uncertainty interval__ on these predictions,
-obtained through a Monte Carlo simulation.
-* The black points are the __actual values__ of the target on training period.
-* The red line is the __trend__ estimated by the model,
-and the vertical lines show the __changepoints__ at which this trend evolves.
+* The Trailblazing Blue Line This represents the model's forecasts during both the training and validation phases.
+* The __Encompassing Blue Shade__: Don't be left in the dark! This provides an 80% uncertainty margin for the predictions, sourced from a Monte Carlo simulation.
+* The __Stark Black Points__: These mark the real-world values during the training period.
+* The __Striking Red Line__: This captures the trend discerned by the model.
+* The__Vertical Markings__: Notice the vertical lines? They pinpoint the changepoints, signalling shifts in the trend.
+* For a closer look at a particular time span, slide across at the base or tap the buttons overhead.
 
 You can use the slider at the bottom or the buttons at the top to focus on a specific time period.
 """
