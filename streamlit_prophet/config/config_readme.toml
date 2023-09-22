@@ -6,7 +6,18 @@ Want to Try Out a Sample Dataset?
 * Tick the box to load a sample dataset and discover the capabilities of this app. 
 * To use your own data, simply untick the box.
 """
+cast = """
 
+
+Make forecast in future days > Forecasting Future Days
+
+* Tick this box if you wish to project a forecast for days that aren't captured in your dataset. By doing so, the model harnesses the entirety of your dataset for training, and the forecast will appear at the dashboard's lower section.
+* Untick if your focus is solely on gauging the model's performance using existing data.
+
+
+
+
+"""
 eva = """
 *  Tick this box if you wish to assess your model using either a training/validation split or a cross-validation method.
 *  Untick if you'd rather bypass the evaluation and proceed directly to forecasting.
