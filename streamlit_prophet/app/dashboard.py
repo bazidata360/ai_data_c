@@ -68,8 +68,7 @@ display_links(readme["links"]["repo"], readme["links"]["article"])
 
 
 st.sidebar.title("1. Data")
-with st.sidebar.expander(
-    "Dataset Options", expanded=False
+with st.sidebar.expander("Dataset Options", expanded=False
 ):
     st.write(readme["app"]["dataset_intro"])
     st.write("")
