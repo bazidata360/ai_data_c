@@ -1,9 +1,18 @@
 [app]
 
+
 dataset_intro = """Load a Sample Dataset:
 Want to Try Out a Sample Dataset?
 * Tick the box to load a sample dataset and discover the capabilities of this app. 
 * To use your own data, simply untick the box.
+"""
+
+eva = """
+*  Tick this box if you wish to assess your model using either a training/validation split or a cross-validation method.
+*  Untick if you'd rather bypass the evaluation and proceed directly to forecasting.
+Perform Cross Evaluation:
+* Tick to embrace the thoroughness of cross-validation for performance assessment.
+* Untick if you prefer the straightforward approach of a simple training/validation split.
 """
 
 modell = """
