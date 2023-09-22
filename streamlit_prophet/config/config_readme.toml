@@ -7,17 +7,6 @@ Want to Try Out a Sample Dataset?
 * To use your own data, simply untick the box.
 """
 cast = """
-
-filter = """
-Select Dataset Dimensions (if applicable)
-
-* Keep in mind, the model is tailored to forecast a single series at once. If your dataset hosts multiple time series, you might wish to sift through or combine these series. The dimensions refer to the columns allowing such filtering and aggregation.
-* Choosing dimensions isn't mandatory. If you opt not to pick any, every target value falling on the same date will be merged, resulting in a single target value for each date.
-* For instance: Imagine a dataset detailing sales from three countries: A, B, and C. You could pinpoint countries B and C, aiming to predict the combined sales from both.
-
-
-
-"""
 Make forecast in future days > Forecasting Future Days
 
 * Tick this box if you wish to project a forecast for days that aren't captured in your dataset. By doing so, the model harnesses the entirety of your dataset for training, and the forecast will appear at the dashboard's lower section.
